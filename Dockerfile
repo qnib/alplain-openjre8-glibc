@@ -1,6 +1,6 @@
 FROM qnib/alplain-openjre8
 
-ARG GLIBC_VER=2.23-r2
+ARG GLIBC_VER=2.26-r0
 
 RUN apk --no-cache add curl ca-certificates bash \
  && curl -sLo /tmp/glibc.apk "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VER}/glibc-${GLIBC_VER}.apk" \
